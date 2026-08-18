@@ -1,0 +1,108 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{hyperref}
+\usepackage{graphicx}
+
+\title{On the Terminal Spectrum of Weierstrass Prym Eigenforms\\
+in the Minimal Stratum of Genus~4}
+\author{}
+\date{}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{remark}[theorem]{Remark}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Weierstrass Prym eigenforms \(W_D(2g-2)\) exist only for \(g\le 4\).
+In genus~4 the entire family \(W_D(6)\) is contained in the even component
+of the minimal stratum \(\Omega\mathcal{M}_4(6)\). Combined with the
+Weierstrass filtration of Yu--Zuo, this forces the individual Lyapunov
+exponents on the positive Prym block \(H_1^+\) to be
+\[
+\lambda_1^+=\tfrac47,\qquad\lambda_2^+=\tfrac27
+\]
+for every admissible discriminant \(D\). The odd component of the same
+stratum carries the contrasting rigid spectrum \(3/7,2/7,1/7\). The result
+is an intersection of existing theorems; no new computation is claimed.
+\end{abstract}
+
+\section{Finiteness of the family}
+Weierstrass Prym eigenforms in the minimal stratum exist only in low genus.
+\begin{proposition}[Guti\'errez-Romo--Pardo et al.]
+The loci \(\Omega E_D(2g-2)\) are empty for all \(g\ge 5\).
+\end{proposition}
+Consequently genus~4 is the terminal case in which these dynamics appear.
+
+\section{Spin parity and structural containment}
+\begin{proposition}[M\"oller]
+Let \((X,\omega)\in W_D(6)\) with \(\operatorname{div}(\omega)=6P\).
+The spin structure determined by \(\mathcal{O}_X(3P)\) is even.
+Equivalently,
+\[
+W_D(6)\;\subset\;\Omega\mathcal{M}_4(6)^{\mathrm{even}}.
+\]
+\end{proposition}
+
+\section{Weierstrass filtration on the minimal stratum}
+\begin{theorem}[Yu--Zuo]
+For every Teichm\"uller curve in a connected component of
+\(\Omega\mathcal{M}_g(2g-2)\) with \(g\le 5\), the Weierstrass gap sequence
+is constant and the Hodge bundle splits into a direct sum of line bundles
+whose degrees yield the following exponents \(w_i=k_i/(2g-1)\):
+
+\begin{center}
+\begin{tabular}{lcc}
+Component & Gap sequence \(G_p\) (\(g=4\)) & Exponents \\
+\hline
+even & \(\{1,2,4,7\}\) & \(1,\ 4/7,\ 2/7,\ 1/7\) \\
+odd  & \(\{1,2,3,7\}\) & \(1,\ 3/7,\ 2/7,\ 1/7\) \\
+hyperelliptic & \(\{1,3,5,7\}\) & \(1,\ 5/7,\ 3/7,\ 1/7\)
+\end{tabular}
+\end{center}
+\end{theorem}
+
+\section{Terminal spectrum}
+\begin{corollary}
+For every admissible discriminant \(D\), every Teichm\"uller curve in the
+Weierstrass Prym locus \(\Omega E_D(6)\) satisfies
+\[
+\lambda_1^+=\frac47,\qquad\lambda_2^+=\frac27
+\]
+on the \(4\)-dimensional block \(H_1^+\). (The complementary block \(H^-\)
+carries the known exponents \(\pm 1/7\).)
+\end{corollary}
+
+The sum \(\lambda_1^++\lambda_2^+=6/7\) is the EKZ formula; the individual
+split is forced by the even-component filtration of Yu--Zuo together with
+M\"oller's parity containment.
+
+\begin{remark}[Contrast]
+The odd component of \(\Omega\mathcal{M}_4(6)\) is likewise rigid, but with
+the distinct spectrum \(3/7,2/7,1/7\). The Prym--Weierstrass family never
+enters that component.
+\end{remark}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.85\textwidth]{spectral_contrast_g4.pdf}
+\caption{Weierstrass exponents on the three components of
+$\Omega\mathcal{M}_4(6)$ (Yu--Zuo). All $W_D(6)$ sit in the even
+component and therefore inherit $4/7,2/7$.}
+\end{figure}
+
+
+\section{Attribution}
+\begin{itemize}
+\item Existence ceiling \(g\ge 5\): Guti\'errez-Romo--Pardo et al.
+\item Even spin of \(W_D(6)\): M\"oller.
+\item Rigid Weierstrass exponents on even/odd components: Yu--Zuo
+  (arXiv:1203.6053).
+\item Sum formulae and \(H^-=\pm 1/7\): Eskin--Kontsevich--Zorich / M\"oller.
+\end{itemize}
+No computational determination of the individual exponents is claimed.
+
+\end{document}
